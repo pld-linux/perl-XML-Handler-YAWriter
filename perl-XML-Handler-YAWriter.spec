@@ -5,7 +5,7 @@ Summary:	XML::Handler::YAWriter perl module
 Summary(pl):	Modu³ perla XML::Handler::YAWriter
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
-Release:	2
+Release:	3
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
