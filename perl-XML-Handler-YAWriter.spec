@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML-Handler
-%define	pnam	YAWriter
+%define	pdir	XML
+%define	pnam	Handler-YAWriter
 Summary:	XML-Handler-YAWriter perl module
 Summary(pl):	Modu³ perla XML-Handler-YAWriter
 Name:		perl-XML-Handler-YAWriter
