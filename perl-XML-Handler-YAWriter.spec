@@ -5,14 +5,14 @@ Summary:	XML::Handler::YAWriter perl module
 Summary(pl):	Modu³ perla XML::Handler::YAWriter
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
-Release:	2
+Release:	3
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl(IO::File) >= 1.06
 BuildRequires:	perl-libxml >= 0.06
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +31,8 @@ drukowania.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -46,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/XML/Handler/*
+%{perl_vendorlib}/XML/Handler/*
 %{_mandir}/man[13]/*
