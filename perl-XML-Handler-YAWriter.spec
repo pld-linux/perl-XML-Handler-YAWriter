@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	Handler-YAWriter
@@ -6,7 +10,7 @@ Summary(pl):	Modu³ perla XML::Handler::YAWriter
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
 Release:	3
-License:	distributable
+License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c7ba2a828a284d6a13ea6fbbfec2b162
@@ -36,10 +40,13 @@ drukowania.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
