@@ -15,9 +15,15 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-YAWriter implements Yet Another XML::Handler::Writer. The
-reasons for this one are that I needed a flexible escaping
-technique, and want some kind of pretty printing.
+YAWriter implements Yet Another XML::Handler::Writer. The reasons for
+this one are that I needed a flexible escaping technique, and want
+some kind of pretty printing.
+
+%description -l pl
+YAWriter to jeszcze jedna implementacja (Yet Another)
+XML::Handler::Writer. Powsta³a dlatego, ¿e autor potrzebowa³
+elastycznej techniki cytowania i chcia³ pewnego rodzaju ³adnego
+drukowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
