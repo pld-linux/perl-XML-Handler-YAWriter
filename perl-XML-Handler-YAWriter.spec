@@ -9,6 +9,7 @@ Release:	3
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c7ba2a828a284d6a13ea6fbbfec2b162
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl(IO::File) >= 1.06
 BuildRequires:	perl-libxml >= 0.06
