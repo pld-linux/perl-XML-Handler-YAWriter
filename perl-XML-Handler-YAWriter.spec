@@ -8,7 +8,7 @@ Version:	0.23
 Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl(IO::File) >= 1.06
 BuildRequires:	perl-libxml >= 0.06
