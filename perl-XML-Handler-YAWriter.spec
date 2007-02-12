@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Handler-YAWriter
 Summary:	XML::Handler::YAWriter perl module
-Summary(pl):	Modu≥ perla XML::Handler::YAWriter
+Summary(pl.UTF-8):   Modu≈Ç perla XML::Handler::YAWriter
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
 Release:	4
@@ -26,10 +26,10 @@ YAWriter implements Yet Another XML::Handler::Writer. The reasons for
 this one are that I needed a flexible escaping technique, and want
 some kind of pretty printing.
 
-%description -l pl
+%description -l pl.UTF-8
 YAWriter to jeszcze jedna implementacja (Yet Another)
-XML::Handler::Writer. Powsta≥a dlatego, øe autor potrzebowa≥
-elastycznej techniki cytowania i chcia≥ pewnego rodzaju ≥adnego
+XML::Handler::Writer. Powsta≈Ça dlatego, ≈ºe autor potrzebowa≈Ç
+elastycznej techniki cytowania i chcia≈Ç pewnego rodzaju ≈Çadnego
 drukowania.
 
 %prep
