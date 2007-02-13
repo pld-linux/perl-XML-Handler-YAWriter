@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	Handler-YAWriter
 Summary:	XML::Handler::YAWriter perl module
-Summary(pl.UTF-8):   Moduł perla XML::Handler::YAWriter
+Summary(pl.UTF-8):	Moduł perla XML::Handler::YAWriter
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
 Release:	4
