@@ -5,15 +5,16 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	Handler-YAWriter
-Summary:	XML::Handler::YAWriter perl module
-Summary(pl.UTF-8):	Moduł perla XML::Handler::YAWriter
+Summary:	XML::Handler::YAWriter Perl module - yet another Perl SAX XML Writer
+Summary(pl.UTF-8):	Moduł Perla XML::Handler::YAWriter - jeszcze jeden perlowy SAX XML Writer
 Name:		perl-XML-Handler-YAWriter
 Version:	0.23
 Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c7ba2a828a284d6a13ea6fbbfec2b162
+URL:		http://search.cpan.org/dist/XML-Handler-YAWriter/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl(IO::File) >= 1.06
 BuildRequires:	perl-libxml >= 0.06
@@ -53,7 +54,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%attr(755,root,root) %{_bindir}/*
-%{perl_vendorlib}/XML/Handler/*
-%{_mandir}/man[13]/*
+%doc Changes README
+%attr(755,root,root) %{_bindir}/xmlpretty
+%{perl_vendorlib}/XML/Handler/YAWriter.pm
+%{_mandir}/man1/xmlpretty.1p*
+%{_mandir}/man3/XML::Handler::YAWriter.3pm*
