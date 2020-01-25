@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	Handler-YAWriter
 Summary:	XML::Handler::YAWriter Perl module - yet another Perl SAX XML Writer
